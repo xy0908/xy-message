@@ -1,0 +1,83 @@
+.logon-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.logon-wrap {
+    overflow-y: scroll;
+    z-index: 99;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: -1px 0px 2px #eee9e9;
+
+
+    .box {
+        position: absolute;
+        z-index: 9999;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 800px;
+        height: 500px;
+        border-radius: 15px;
+        background-image: linear-gradient(to right, #fff 40%, rgb(0, 213, 255) 150%);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+
+
+        .left {
+            width: 50%;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            color: #5a5a5a;
+
+            .title {
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            .content {
+                margin: 20px 0;
+                font-size: 16px;
+            }
+
+            .button {
+                box-sizing: border-box;
+                margin: 0 10px;
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 4px;
+                background-color: #409eff;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                transition: all 1s;
+                -webkit-transition: all 1s;
+                -moz-transition: all 1s;
+                -ms-transition: all 1s;
+                -o-transition: all 1s;
+
+                &:hover {
+                    background-color: #6FB3FF;
+                }
+            }
+        }
+    }
+}

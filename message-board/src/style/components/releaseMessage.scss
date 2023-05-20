@@ -1,0 +1,176 @@
+.release-message::-webkit-scrollbar {
+    display: none;
+}
+
+.release-message {
+    overflow-y: scroll;
+    z-index: 9999;
+    box-sizing: border-box;
+    position: fixed;
+    right: -300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -1px 0px 2px #eee9e9;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+
+        .header-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .header-x {
+            font-size: 25px;
+            color: #747373;
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .main-select-message-background {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+            height: 30px;
+            list-style: none;
+
+            .main-select-message-background-child {
+                width: 30px;
+                cursor: pointer;
+            }
+
+            .true {
+                border: 1px solid;
+            }
+        }
+
+        .textarea {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            padding: 20px;
+            width: 100%;
+            font-size: 14px;
+            background: #F2F2F2;
+
+            .message-textarea {
+                width: 100%;
+                height: 150px;
+                font-size: 18px;
+                font-weight: bold;
+                resize: none;
+                outline: none;
+                border: none;
+                color: #676262;
+                background: none;
+            }
+
+            .author {
+                width: 100%;
+                height: 30px;
+                text-indent: 10px;
+                font-weight: bold;
+                border: 2px solid #fff;
+                color: #676262;
+                outline: none;
+                background: none;
+            }
+        }
+
+        .main-select-message-table {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            list-style: none;
+
+            &::before {
+                content: "选择标签";
+                position: absolute;
+                top: -20px;
+                font-size: 17px;
+                font-weight: bold;
+                color: #000;
+            }
+
+            .table-child {
+                box-sizing: border-box;
+                margin: 10px 10px 0 10px;
+                padding: 5px 10px;
+                font-size: 15px;
+                color: #676262;
+                cursor: pointer;
+            }
+
+            .true {
+                color: #000;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+                background-color: #F2F2F2;
+            }
+        }
+
+        .disclaimers {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+
+            .disclaimers-title {
+                font-size: 17px;
+                font-weight: bold;
+                color: #000;
+            }
+
+            .disclaimers-content {
+                margin-top: 10px;
+                font-size: 14px;
+                color: #676262;
+
+                .disclaimers-text {
+                    margin: 10px;
+                }
+            }
+        }
+
+        .release-button {
+            margin-top: 20px;
+            height: 40px;
+            width: 100%;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            cursor: pointer;
+            color: #fff;
+            border: none;
+            background-image: linear-gradient(315deg, #9296c6 0, skyblue 100%);
+
+            &:hover {
+                background-image: linear-gradient(315deg, #babcd6 0, skyblue 100%);
+            }
+        }
+    }
+}

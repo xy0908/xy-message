@@ -1,0 +1,32 @@
+{
+  "table": [
+    {
+      "text": "全部",
+      "isActivation": "true",
+    },
+    {
+      "text": "星穹铁道",
+      "isActivation": "false"
+    },
+    {
+      "text": "原神",
+      "isActivation": "false"
+    },
+    {
+      "text": "绝区零",
+      "isActivation": "false"
+    },
+    {
+      "text": "卡拉比丘",
+      "isActivation": "false"
+    },
+    {
+      "text": "来自星尘",
+      "isActivation": "false"
+    },
+    {
+      "text": "小羊的推荐",
+      "isActivation": "false"
+    }
+  ]
+}

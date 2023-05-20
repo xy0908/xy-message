@@ -1,0 +1,102 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .title {
+        font-size: 25px;
+        font-weight: bold;
+        color: #5a5a5a;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        width: 60%;
+
+        .admin {
+            margin: 10px 0;
+            height: 35px;
+            text-indent: 10px;
+            outline: none;
+            border: 1px solid #dcdfe6;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        .adminPlaceholder::-webkit-input-placeholder {
+            color: red;
+        }
+
+        .password {
+            margin: 10px 0;
+            height: 35px;
+            text-indent: 10px;
+            outline: none;
+            border: 1px solid #dcdfe6;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+    }
+
+    .footer {
+        display: flex;
+
+        .create {
+            box-sizing: border-box;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #409eff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+
+            &:hover {
+                background-color: #6FB3FF;
+            }
+        }
+
+        .back {
+            box-sizing: border-box;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid #dcdfe6;
+            outline: none;
+            color: #000;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #fff;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+
+            &:hover {
+                color: #409eff;
+                border-color: #c6e2ff;
+                background-color: #E9F5FF;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.index::-webkit-scrollbar {
+    display: none;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .index-header-illustrate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+
+        .illustrate-h2 {
+            font-size: 40px;
+            color: #91bdcf;
+        }
+
+        .illustrate-h5 {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #878787;
+        }
+    }
+}
